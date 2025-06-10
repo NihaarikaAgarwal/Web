@@ -409,6 +409,9 @@ section h2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /* More Projects*/
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .project-card {
@@ -503,6 +506,33 @@ section h2 {
   top: -9px; 
 }
 
+.pub-link {
+    background-color: #3f2e6b;
+    color: #aee8ff;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* Corrected: Adjusted values for a visible, subtle L/R/B shadow */
+    /* Use a standard rgba black shadow for a more common "lifted" effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    padding: 20px 40px;
+    font-size: 1.1em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.pub-link:hover {
+    background-color: #5dd0ef;
+    color: #8233e2;
+    transform: translateY(-3px);
+    /* Corrected: Use only one valid color format (e.g., rgba) */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow for hover */
+    /* If you wanted the blueish color on hover shadow, it would be: */
+    /* box-shadow: 0 12px 25px #8bd5f2; */
+}
 /* animation for fly in */
 .animate-slide-right,
 .animate-slide-left,
@@ -639,7 +669,7 @@ section h2 {
   width: fit-content;
   display: inline-block;
   margin-left: 25px; 
-  box-shadow: 3px 3px 12px rgba(179, 245, 255, 0.2);
+  box-shadow: 3px 3px 12px rgba(179, 245, 255, 1);
   transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
@@ -821,6 +851,28 @@ section h2 {
   transform: translateY(-2px);
   color: #8233e2;
 }
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: -500px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(174, 246, 255, 0.4);
+}
+
 
 
 
