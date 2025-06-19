@@ -1,7 +1,7 @@
 # Virtual environment directory
 venv/
 
-# Environment variables file (contains sensitive info)
+# Environment variables file
 .env
 
 # Python bytecode and cache directories
@@ -11,6 +11,6 @@ __pycache__/
 # macOS specific files
 .DS_Store
 
-# Flask-specific build files if any (usually not for simple apps)
+# Flask-specific build files if any
 instance/
 .flaskenv
